@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
 BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
 LOC_FILE="$BASE_DIR/locations.conf"
 OUT_FILE="$BASE_DIR/data.json"
