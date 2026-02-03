@@ -1,10 +1,8 @@
+name: Weather updater
+
 permissions:
   contents: write
 
-
-
-name
-: Weather updater
 on:
   schedule:
     - cron: "*/30 * * * *"
@@ -23,23 +21,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y curl jq
 
-      - name: Debug paths and files
-        run: |
-          echo "PWD:"
-          pwd
-          echo "Repo root contents:"
-          ls -la
-          echo "Check locations.conf:"
-          if [ ! -f locations.conf ]; then
-            echo "ERROR: locations.conf not found"
-            exit 1
-          fi
-          echo "locations.conf OK"
-
       - name: Update weather data
         run: |
-          cd "$GITHUB_WORKSPACE"
-          chmod +x ./update_data.sh
+          chmod +x update_data.sh
           ./update_data.sh
 
       - name: Commit and push if changed
