@@ -1,5 +1,10 @@
-name: Weather updater
+permissions:
+  contents: write
 
+
+
+name
+: Weather updater
 on:
   schedule:
     - cron: "*/30 * * * *"
