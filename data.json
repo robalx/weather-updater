@@ -2,7 +2,7 @@
   "meta": {
     "source": "Open-Meteo (open data)",
     "source_url": "https://open-meteo.com/",
-    "generated": "2026-04-07T06:18:36Z",
+    "generated": "2026-04-07T07:55:12Z",
     "api_calls": {
       "epgd": "https://api.open-meteo.com/v1/forecast?latitude=54.34&longitude=18.66&current_weather=true&hourly=pressure_msl"
 ,
@@ -24,58 +24,37 @@
       "code": "EPGD",
       "name": "Gdańsk, Poland",
       "weather":
-      <html>
-      <head><title>502 Bad Gateway</title></head>
-      <body>
-      <center><h1>502 Bad Gateway</h1></center>
-      <hr><center>nginx</center>
-      </body>
-      </html>
-    }
+      error code: 504    }
 ,
     "gdyn-wit": {
       "code": "GDYN-WIT",
       "name": "Gdynia-Witomino, Poland",
       "weather":
-      <html>
-      <head><title>504 Gateway Time-out</title></head>
-      <body>
-      <center><h1>504 Gateway Time-out</h1></center>
-      <hr><center>nginx</center>
-      </body>
-      </html>
-    }
+      error code: 504    }
 ,
     "epgt": {
       "code": "EPGT",
       "name": "Gliwice, Poland",
       "weather":
-      <html>
-      <head><title>504 Gateway Time-out</title></head>
-      <body>
-      <center><h1>504 Gateway Time-out</h1></center>
-      <hr><center>nginx</center>
-      </body>
-      </html>
-    }
+      error code: 502    }
 ,
     "par": {
       "code": "PAR",
       "name": "Paris, France",
       "weather":
-    }
+      error code: 504    }
 ,
     "ber": {
       "code": "BER",
       "name": "Berlin, Germany",
       "weather":
-    }
+      error code: 502    }
 ,
     "nuuk": {
       "code": "NUUK",
       "name": "Nuuk, Danmark",
       "weather":
-    }
+      error code: 524    }
 ,
     "St.Denis": {
       "code": "ST.DENIS",
