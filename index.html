@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Updater</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<h1>Weather updater działa</h1>
+
+<button id="btn">Pokaż dane</button>
+
+<pre id="wynik"></pre>
+
+<script>
+$(function () {
+
+    $("#btn").click(function () {
+
+        $.getJSON("data.json", function(data) {
+            $("#wynik").text(JSON.stringify(data, null, 2));
+        });
+
+    });
+
+});
+</script>
+
+</body>
+</html>
